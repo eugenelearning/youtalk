@@ -1,0 +1,12 @@
+.links {
+    display: flex;
+    gap: calc(var(--size_unit) * 2);
+    list-style: none;
+    margin: calc(var(--size_unit) * 6) 0;
+}
+
+@media (min-width: 1024px) {
+    .links {
+        flex-wrap: wrap;
+    }
+}

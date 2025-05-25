@@ -1,0 +1,34 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 2);
+}
+
+.list .list {
+    padding-left: 1em;
+}
+
+.content {
+    display: flex;
+    align-items: baseline;
+    gap: calc(var(--size_unit) * 3);
+}
+
+.content::before {
+    flex-shrink: 0;
+    content: " ";
+    display: block;
+    width: calc(var(--size_unit) * 2);
+    height: calc(var(--size_unit) * 2);
+    border-radius: 50%;
+    background-color: var(--color_success_text);
+}
+
+.list .list .content {
+    padding-left: 1em;
+}
+
+.list .list .content::before {
+    content: none;
+}

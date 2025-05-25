@@ -1,0 +1,7 @@
+.graphic {
+    margin: 0 auto;
+    height: calc(var(--size_unit) * 9);
+    width: calc(var(--size_unit) * 45);
+    background: url('./assets/bg.svg') no-repeat center center;
+    border: 0;
+}

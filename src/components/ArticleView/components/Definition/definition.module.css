@@ -1,0 +1,20 @@
+.layout {
+    padding: calc(var(--size_unit) * 6);
+    border-radius: calc(var(--size_unit) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 2);
+    background-color: var(--color_background);
+}
+
+.layout.mode_danger {
+    background-color: var(--color_danger_background);
+}
+
+.layout.mode_warning {
+    background-color: var(--color_warning_background);
+}
+
+.layout.mode_info {
+    background-color: var(--color_success_background);
+}

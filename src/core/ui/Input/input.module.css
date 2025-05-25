@@ -1,0 +1,26 @@
+.input {
+    --_border-width: 1px;
+
+    display: flex;
+    align-items: stretch;
+    display: flex;
+    border-radius: var(--size_unit);
+    background-color: var(--color_mono_primary);
+    border: var(--_border-width) solid var(--color_border);
+    align-items: stretch;
+    min-height: calc(var(--size_unit) * 12);
+    overflow: hidden;
+}
+
+.control {
+    border: 0;
+    flex-grow: 1;
+    outline: none;
+}
+
+.after {
+    --_offset: calc(var(--_border-width) * -1);
+
+    flex-shrink: 0;
+    margin: var(--_offset) var(--_offset) var(--_offset) 0;
+}

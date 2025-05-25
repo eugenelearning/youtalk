@@ -1,0 +1,24 @@
+.layout {
+    display: flex;
+    gap: calc(var(--size_unit) * 6);
+    flex-direction: column;
+}
+
+.image {
+    flex-grow: 1;
+    align-self: center;
+}
+
+.layout.layout_vertical {
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .layout {
+        flex-direction: row;
+    }
+
+    .image {
+        width: 100%;
+    }
+}

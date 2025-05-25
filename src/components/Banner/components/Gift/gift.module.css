@@ -1,0 +1,15 @@
+.layout {
+    height: calc(var(--size_unit) * 73);
+    border-radius: calc(var(--size_unit) * 4);
+    background-color: var(--color_primary);
+    background-image: url('./assets/bg.png'), url('./assets/footer.png');
+    background-size: cover;
+    color: var(--color_mono_primary);
+    text-align: center;
+    padding: calc(var(--size_unit) * 15) calc(var(--size_unit) * 10);
+}
+
+.layout .text {
+    line-height: 1.2;
+    font-size: 2.2em;
+}

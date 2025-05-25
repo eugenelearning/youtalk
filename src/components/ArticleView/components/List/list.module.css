@@ -1,0 +1,24 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 4);
+    margin: calc(var(--size_unit) * 4) 0;
+}
+
+.item {
+    display: flex;
+    align-items: baseline;
+    gap: calc(var(--size_unit) * 3);
+}
+
+.item::before {
+    flex-shrink: 0;
+    content: " ";
+    display: block;
+    width: calc(var(--size_unit) * 2);
+    height: calc(var(--size_unit) * 2);
+    margin-left: calc(var(--size_unit) * 3);
+    border-radius: 50%;
+    background-color: var(--color_success_text);
+}

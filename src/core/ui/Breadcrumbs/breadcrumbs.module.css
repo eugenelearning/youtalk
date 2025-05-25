@@ -1,0 +1,13 @@
+.list {
+    padding: calc(var(--size_unit) * 4) 0;
+}
+
+.list,
+.item {
+    list-style: none;
+    display: flex;
+}
+
+.list {
+    gap: var(--size_unit)
+}

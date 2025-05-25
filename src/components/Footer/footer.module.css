@@ -1,0 +1,130 @@
+.footer {
+    background-color: var(--color_primary);
+    padding: calc(var(--size_unit) * 10) 0 calc(var(--size_unit) * 4);
+    color: var(--color_mono_primary);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: calc(var(--size_unit) * 6);
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 2);
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 3);
+}
+
+.input {
+    max-width: 85%;
+}
+
+.socials {
+    text-align: right;
+    color: var(--color_mono_opposite);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 10);
+}
+
+.networks {
+    display: flex;
+    gap: calc(var(--size_unit) * 4);
+    align-items: flex-end;
+}
+
+.secondary {
+    opacity: 0.7;
+}
+
+.submit {
+    color: var(--color_mono_primary);
+    display: block;
+}
+
+.additional {
+    margin-top: calc(var(--size_unit) * 6);
+    padding-top: calc(var(--size_unit) * 4);
+    border-top: 1px solid color-mix(in srgb, var(--color_border_dark) 30%, transparent);
+}
+
+.sublinks {
+    opacity: .7;
+    list-style: none;
+    display: flex;
+    gap: calc(var(--size_unit) * 12);
+}
+
+@media (min-width: 1200px) {
+    .nav {
+        grid-column: span 2;
+    }
+
+    .feedback {
+        grid-column: span 6;
+    }
+
+    .socials {
+        grid-column: -2;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .nav {
+        grid-column: span 3;
+    }
+
+    .feedback {
+        grid-column: span 6;
+    }
+
+    .socials {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 414) and (max-width: 1023px){
+    .nav {
+        grid-column: span 6;
+    }
+
+    .feedback {
+        grid-column: span 12;
+    }
+
+    .socials {
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 413) {
+    .nav {
+        grid-column: span 6;
+    }
+
+    .feedback,
+    .socials {
+        grid-column: span 12;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    .input {
+        max-width: 100%;
+    }
+
+    .sublinks {
+        flex-direction: column;
+        gap: calc(var(--size_unit) * 4);
+    }
+}

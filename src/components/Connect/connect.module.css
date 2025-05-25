@@ -1,0 +1,9 @@
+.layout {
+    background: url('./assets/bg.png') center right no-repeat;
+    background-size: contain;
+    min-height: calc(var(--size_unit) * 83);
+    gap: calc(var(--size_unit) * 8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

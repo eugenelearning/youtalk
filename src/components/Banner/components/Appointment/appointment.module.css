@@ -1,0 +1,22 @@
+
+.layout {
+    padding: calc(var(--size_unit) * 12) calc(var(--size_unit) * 6) calc(var(--size_unit) * 6) calc(var(--size_unit) * 6);
+    border-radius: calc(var(--size_unit) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 6);
+    background: var(--color_info_backgroud) url('./assets/bg.png') center calc(var(--size_unit) * 6) no-repeat;
+    background-size: 60%;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 3);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}

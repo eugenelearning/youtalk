@@ -1,0 +1,29 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 4);
+    margin: calc(var(--size_unit) * 5) 0;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    margin-top: calc(var(--size_unit) * 2);
+    list-style: none;
+    display: flex;
+    color: var(--color_text_primary_light);
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+}
+
+.detail:not(:first-child)::before {
+    content: "·";
+    display: block;
+    margin: 0 var(--size_unit);
+}

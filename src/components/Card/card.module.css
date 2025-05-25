@@ -1,0 +1,54 @@
+.card {
+    --_border-radius: calc(var(--size_unit) * 5);
+
+    border-radius: calc(var(--size_unit) * 5);
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.card,
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.slug {
+    margin: calc(var(--size_unit) * 2) 0;
+    flex-grow: 1;
+}
+
+.content {
+    padding: calc(var(--size_unit) * 4);
+    border: 1px solid var(--color_separator);
+    gap: var(--size_unit);
+    border-radius: 0 0 var(--_border-radius) var(--_border-radius);
+    flex-grow: 1;
+}
+
+.img {
+    border-radius: var(--_border-radius) var(--_border-radius) 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: calc(var(--size_unit) * 3);
+    left: calc(var(--size_unit) * 3);
+}
+
+.tagslist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 2)
+}
+
+.tagitem {
+    display: flex;
+}

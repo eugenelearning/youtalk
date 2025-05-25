@@ -1,0 +1,18 @@
+.layout {
+    height: calc(var(--size_unit) * 73);
+    border-radius: calc(var(--size_unit) * 4);
+    border: 1px solid var(--color_border);
+    background-image: url('./assets/fg.png'), url('./assets/bg.png');
+    background-size: 50%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: calc(var(--size_unit) * 8);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 4);
+    align-items: flex-start;
+}
+
+.mark {
+    color: var(--color_primary);
+}

@@ -1,0 +1,105 @@
+.layout {
+    border-radius: calc(var(--size_unit) * 4);
+    border: 1px solid var(--color_border);
+    padding: calc(var(--size_unit) * 6) calc(var(--size_unit) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 4);
+    align-items: center;
+    position: relative;
+}
+
+.tags {
+    top: calc(var(--size_unit) * 4);
+    left: calc(var(--size_unit) * 4);
+    position: absolute;
+    z-index: var(--index_micro);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--size_unit) * 2);
+}
+
+.tag {
+    background-color: var(--color_background-mist_light);
+    padding: var(--size_unit);
+    border-radius: var(--size_unit);
+}
+
+.photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: calc(var(--size_unit) * 30);
+    height: calc(var(--size_unit) * 30);
+}
+
+.credentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(var(--size_unit) * 2);
+    border-bottom: 1px solid var(--color_border_light);
+    padding-bottom: calc(var(--size_unit) * 3);
+    width: 100%;
+}
+
+.name {
+    font-size: calc(var(--size_unit) * 5);
+    line-height: calc(var(--size_unit) * 7);
+    font-weight: var(--text_font-weight_bold);
+}
+
+.position {
+    font-size: calc(var(--size_unit) * 4);
+    line-height: calc(var(--size_unit) * 6);
+    font-weight: var(--text_font-weight_semibold);
+}
+
+.goals {
+    margin-top: calc(var(--size_unit) * 2);
+    list-style: none;
+    display: flex;
+    color: var(--color_text_secondary)
+}
+
+.goal {
+    display: flex;
+    align-items: center;
+}
+
+.goal:not(:first-child)::before {
+    flex-shrink: 0;
+    content: " ";
+    display: block;
+    width: var(--size_unit);
+    height: var(--size_unit);
+    margin: 0 calc(var(--size_unit) * 2);
+    border-radius: 50%;
+    background-color: var(--color_text_secondary);
+}
+
+.issues {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--size_unit) * 2);
+}
+
+.issue {
+    display: flex;
+    align-items: baseline;
+    gap: calc(var(--size_unit) * 2);
+}
+
+.issue::before {
+    flex-shrink: 0;
+    content: " ";
+    display: block;
+    width: calc(var(--size_unit) * 2);
+    height: calc(var(--size_unit) * 2);
+    border-radius: 50%;
+    background-color: var(--color_success_text);
+}
+
+

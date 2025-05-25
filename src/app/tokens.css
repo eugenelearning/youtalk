@@ -1,0 +1,62 @@
+:root {
+    --size_unit: 4px;
+
+    --color_mono_primary: rgb(255, 255, 255);
+    --color_mono_opposite: rgb(0, 0, 0);
+
+    --color_background: rgba(255, 255, 255, 1);
+    --color_background-mist: rgba(255, 255, 255, 0.7);
+    --color_background-mist_light: rgba(243, 244, 248, 0.7);
+
+
+    --color_separator: rgba(239, 245, 251, 1);
+    --color_border: rgba(193, 197, 205, 1);
+    --color_border_light: rgba(222, 222, 222, 1);
+    --color_border_dark: rgba(157, 157, 157, 1);
+
+   
+    --color_success_background: rgba(227, 245, 245, 1);
+    --color_success_text: rgba(3, 178, 165, 1);
+
+    --color_warning_background: rgba(254, 250, 236, 1);
+    --color_danger_background: rgba(255, 243, 235, 1);
+    --color_info_backgroud: rgba(243, 247, 254, 1);
+ 
+    --color_primary: rgba(41, 99, 163, 1);
+
+    --color_text_primary: rgba(51, 51, 51, 1);
+    --color_text_primary_light: rgba(73, 73, 73, 1);
+
+    --color_text_secondary: rgba(162, 167, 177, 1);
+
+    --color_text_primary_vivid: rgba(1, 22, 50, 1);
+
+
+    --text_font-weight_bold: 700;
+    --text_font-weight_semibold: 600;
+    --text_font-weight_medium: 500;
+    --text_font-weight_regular: 400;
+
+    --text_font-size_xxxl: 48px;
+    --text_font-size_xxl: 32px;
+    --text_font-size_xl: 24px;
+    --text_font-size_l: 18px;
+    --text_font-size_m: 16px;
+    --text_font-size_s: 14px;
+    --text_font-size_xs: 12px;
+
+    --text_line-height_xxxl: calc(var(--text_font-size_xxxl) + 4px);
+    --text_line-height_xxl: calc(var(--text_font-size_xxl) + 4px);
+    --text_line-height_xl: calc(var(--text_font-size_xl) + 4px);
+    --text_line-height_l: calc(var(--text_font-size_l) + 4px);
+    --text_line-height_m: calc(var(--text_font-size_m) + 4px);
+    --text_line-height_s: calc(var(--text_font-size_s) + 2px);
+
+    --z-index_micro: 2;
+    --z-index_minor: 10;
+    --z-index_default: 50;
+    --z-index-major: 200;
+    --z-index-critical: 500;
+    --z-index-bloker: 900;
+}
+

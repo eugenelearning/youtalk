@@ -10,7 +10,50 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
+  ...compat.config({
+        extends: ['next'],
+        rules: {
+            "import/order": [
+                "error", {
+                    "groups": [
+                        "external",
+                        "builtin",
+                        "object",
+                        "sibling",
+                        "parent",
+                        "internal",
+                        "type",
+                        "index"
+                    ],
+
+                    "newlines-between": "always",
+                    "pathGroups": [
+                        {
+                            "pattern": "next",
+                            "group": "object",
+                            "position": "after"
+                        },
+                        {
+                            "pattern": "@/core/**",
+                            "group": "object",
+                            "position": "after"
+                        },
+                        {
+                            "pattern": "@/domain/**",
+                            "group": "builtin",
+                            "position": "before"
+                        },
+                        {
+                            "pattern": "@/components/**",
+                            "group": "builtin",
+                            "position": "after"
+                        }
+                    ],
+                    "distinctGroup": false
+                }
+            ]
+        },
+    }),
+]
 
 export default eslintConfig;

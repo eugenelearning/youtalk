@@ -1,0 +1,19 @@
+.group,
+.layout {
+    display: flex;
+    gap: calc(var(--size_unit) * 6);
+}
+
+.layout {
+    flex-direction: column;
+}
+
+.group {
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .group {
+        flex-direction: row;
+    }
+}

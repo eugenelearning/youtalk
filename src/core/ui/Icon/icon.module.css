@@ -1,0 +1,32 @@
+.icon {
+    display: inline-flex;
+    line-height: 0;
+    flex-shrink: 0;
+    fill: none;
+    color: inherit;
+}
+.icon.size_xs {
+    width: calc(var(--size_unit) * 4);
+    height: calc(var(--size_unit) * 4);
+}
+  
+.icon.size_s {
+    width: calc(var(--size_unit) * 6);
+    height: calc(var(--size_unit) * 6);
+}
+
+.icon.size_m {
+    width: calc(var(--size_unit) * 8);
+    height: calc(var(--size_unit) * 8);
+}
+
+.icon.size_l {
+    width: calc(var(--size_unit) * 12);
+    height: calc(var(--size_unit) * 12);
+}
+
+.sprite {
+    width: 0;
+    height: 0;
+    display: none;
+}

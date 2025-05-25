@@ -1,0 +1,11 @@
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.label {
+    color: var(--color_text_secondary);
+    margin-top: calc(var(--size_unit) * 2);
+    display: inline-block;
+}
