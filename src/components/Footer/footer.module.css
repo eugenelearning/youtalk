@@ -91,7 +91,7 @@
     }
 }
 
-@media (min-width: 414) and (max-width: 1023px){
+@media (min-width: 414px) and (max-width: 1023px){
     .nav {
         grid-column: span 6;
     }
@@ -105,7 +105,7 @@
     }
 }
 
-@media (max-width: 413) {
+@media (max-width: 413px) {
     .nav {
         grid-column: span 6;
     }

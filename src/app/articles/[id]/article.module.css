@@ -65,7 +65,7 @@
     }
 }
 
-@media (min-width: 414) and (max-width: 1023px){
+@media (min-width: 414px) and (max-width: 1023px){
     .article {
         grid-column: span 12;
     }
@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 413) {
+@media (max-width: 413px) {
     .article {
         grid-column: span 12;
     }
