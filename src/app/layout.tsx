@@ -9,7 +9,8 @@ import { Sprite } from '@/core/ui/Icon/Sprite';
 import './globals.css';
 
 const montserratFont = Montserrat({
-    weight: ['700', '600', '500', '400']
+    weight: ['700', '600', '500', '400'],
+    subsets: ['cyrillic', 'latin'],
 });
 
 export const metadata: Metadata = {
